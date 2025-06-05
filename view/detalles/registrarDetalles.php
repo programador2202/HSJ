@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -10,16 +10,19 @@ include '../index.php'
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
 
     <div class="container my-5">
         <form action="" method="" id="formulario-registrar">
-            <h2 class="text-center mb-4">Agregar Detalles:</h2>
-            <div class="card">
-                <div class="card-header bg-info"><strong>DETALLES REGISTRADOS</strong></div>
+            <h2 class="text-center mb-4">AGREGAR DETALLES</h2>
+             <button id="vlvlstbien" type="button" onclick="window.location.href='././listarDetalles.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
+            <div class="card mt-3">
+                <div class="card-header bg-primary text-white"><strong>DETALLES REGISTRADOS</strong></div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12 mb-3">

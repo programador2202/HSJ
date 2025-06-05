@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +22,7 @@ include '../index.php'
             <button id="vlvlstbien" type="button" onclick="window.location.href='././listarBien.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
             <hr>
             <div class="card mt-3">
-                <div class="card-header bg-info"><strong>REGISTRAR</strong></div>
+                <div class="card-header bg-primary text-white"><strong>REGISTRAR</strong></div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4 mb-2">

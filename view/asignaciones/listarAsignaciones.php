@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ include '../index.php'
     <hr>
 
     <div class="card mt-3">
-      <div class="card-header bg-info"><strong>ASIGNACIONES REGISTRADAS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>ASIGNACIONES REGISTRADAS</strong></div>
       <div class="card-body">
         <table class="table table-bordered table-striped w-100" id="tabla-Asignaciones">
           <colgroup>

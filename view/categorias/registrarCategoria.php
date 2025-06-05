@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 

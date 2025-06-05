@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -14,12 +14,12 @@ include '../index.php'
 <body>
  
 <!--FIN DE NAVBAR-->
-<div class="container">
+<div class="container mt-5">
   <h2 class="text-center mt-3">GESTIÓN DE PERSONAS</h2>
   <button id="pgaddpersonas" type="button" onclick="window.location.href='././RegistrarPersonas.php'" class="btn btn-success" ><i class="fa-solid fa-plus"></i> NUEVA PERSONA</button>
   <hr>
   <div class="card mt-3">
-      <div class="card-header bg-info"><strong>PERSONAS REGISTRADAS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>PERSONAS REGISTRADAS</strong></div>
       <div class="card-body">
     <div class="table-responsive">
     <table class="table table-bordered table-striped w-100" id="tabla-Personas">

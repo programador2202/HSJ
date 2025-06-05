@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 
@@ -21,7 +21,7 @@ include '../index.php'
        <button id="volverUsuario" type="button" onclick="window.location.href='././listarUsuarios.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>ACTUALIZAR USUARIO</strong></div>
+        <div class="card-header bg-primary text-white"><strong>ACTUALIZAR USUARIO</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">

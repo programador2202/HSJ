@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -16,14 +16,14 @@ include '../index.php'
 </head>
 <body>
 
-<div class="container ">
+<div class="container mt-5">
    
 <h2 class="text-center mt-3">GESTIÓN DE DETALLES</h2>
   <button id="pgaddDetalles" type="button" onclick="window.location.href='././registrarDetalles.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> AGREGAR DETALLES </button>
     <hr>
 
   <div class="card mt-3">
-    <div class="card-header bg-info"><strong>DETALLES REGISTRADAS</strong></div>
+    <div class="card-header bg-primary text-white"><strong>DETALLES REGISTRADAS</strong></div>
     <div class="card-body">
       <table class="table table-bordered table-striped w-100" id="tabla-Detalles">
         <colgroup>

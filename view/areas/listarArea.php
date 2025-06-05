@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,14 +14,14 @@ include '../index.php'
 
 </head>
 <body>
-<div class="container ">
+<div class="container mt-5 ">
    
 <h2 class="text-center mt-3">GESTIÓN DE AREAS</h2>
   <button id="pgaddArea" type="button" onclick="window.location.href='././registrarArea.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVA AREA </button>
     <hr>
 
   <div class="card mt-3">
-    <div class="card-header bg-info"><strong>ÁREAS REGISTRADAS</strong></div>
+    <div class="card-header bg-primary text-white"><strong>ÁREAS REGISTRADAS</strong></div>
     <div class="card-body">
       <table class="table table-bordered table-striped w-100" id="tabla-Areas">
         <colgroup>

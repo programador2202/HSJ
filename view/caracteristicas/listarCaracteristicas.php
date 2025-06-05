@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,13 +13,12 @@ include '../index.php'
 <body>
  
     <div class="container mt-5">
-<button id="pgaddcaracteristicas" type="button" onclick="window.location.href='././registrarCaracteristicas.php'">Agregar Caracteristica</button>
+      <h2 class="text-center">CARACTETISTICAS REGISTRADAS</h2>
+      <button id="pgaddcaracteristicas" type="button" onclick="window.location.href='././registrarCaracteristicas.php'" class="btn btn-success" ><i class="fa-solid fa-plus"></i> AGREGAR CARACTERISTICAS</button>
     
     <hr>
-
-    <h3>Caracteristicas Registradas</h3>
     <div class="card mt-3">
-      <div class="card-header bg-info"><strong>CARACTERISTICAS REGISTRADAS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>CARACTERISTICAS REGISTRADAS</strong></div>
       <div class="card-body">
         <table class="table table-bordered table-striped w-100" id="tabla-Caracteristica">
             <colgroup>

@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +17,13 @@ include '../index.php'
 
 <body>
   
-  <div class="container">
+  <div class="container mt-5">
     <form action="" autocomplete="off" id="formulario-registrar">
       <h2 class="text-center mt-3">REGISTRAR ÁREA</h2>
       <button id="listadoArea" type="button" onclick="window.location.href='././listarArea.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER </button>
 <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-2">

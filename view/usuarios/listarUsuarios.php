@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,14 +13,14 @@ include '../index.php'
 
 </head>
 <body>
-<div class="container mt-4">
+<div class="container mt-5">
         <form action="" method="">
-        <h1 class=" text-center mt-5">GESTIÓN DE USUARIOS</h1>
+        <h2 class=" text-center mt-5">GESTIÓN DE USUARIOS</h2>
         <br>
         <button id="pgaddUsuarios" type="button" onclick="window.location.href='././agregarUsuario.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVO USUARIO</button>
         <hr>
         <div class="card mt-3">
-            <div class="card-header bg-info">
+            <div class="card-header bg-primary text-white">
                 <strong>USUARIOS REGISTRADOS</strong>
             </div>
             <div class="card-body">

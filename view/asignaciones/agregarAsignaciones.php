@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -14,13 +14,13 @@ include '../index.php'
 </head>
 
 <body>
-  <div class="container my-5">
+  <div class="container mt-5">
     <form action="" method="" autocomplete="off" id="formulario-registrar">
       <h2 class="text-center mb-4">REGISTRAR ASIGNACIÓN</h2>
-    <button id="vlvlstAsignacion" type="button" onclick="window.location.href='././listarasignacion.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
+    <button id="vlvlstAsignacion" type="button" onclick="window.location.href='././listarAsignaciones.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
     <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-4 mb-3">

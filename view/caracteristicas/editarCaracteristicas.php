@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -17,7 +17,7 @@ include '../index.php'
         <form action="" method="" id="formulario-registrar" >
             <h2 class="text-center mb-4">ACTUALIZACIÓN DE DATOS:</h2>
             <div class="card">
-                <div class="card-header bg-info"><strong>ACTUALIZAR</strong></div>
+                <div class="card-header bg-primary text-white"><strong>ACTUALIZAR</strong></div>
                 <div class="card-body">
                     <div class="row">
                     <div class="col-md-12 mb-3">

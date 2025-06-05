@@ -1,5 +1,5 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
 
 <!DOCTYPE html>
@@ -15,13 +15,13 @@ include '../index.php'
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mt-5">
     <form action="" method="POST" id="formulario-personas">
       <h2 class="text-center mt-3">REGISTRAR PERSONA</h2>
       <button id="volverpersona" type="button" onclick="window.location.href='././ListarPersonas.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR PERSONA</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR PERSONA</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-6 mb-3">

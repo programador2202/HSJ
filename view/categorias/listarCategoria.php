@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -15,7 +14,7 @@ include '../index.php'
 </head>
 <body>
 
-<div class="container ">
+<div class="container mt-5">
    <h2 class="text-center mt-3">GESTIÓN DE CATEGORIAS</h2>
   <button id="pgaddCategoria" type="button" onclick="window.location.href='././registrarCategoria.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVA CATEGORIA</button>
     <hr>
@@ -47,60 +46,84 @@ include '../index.php'
   </div>
 
 <script>
-  
-   //acceso global
-   //OBTENEMOS TODOS LOS DATOS
-  const tabla=document.querySelector("#tabla-Categorias tbody");
-  function obtenerDatos(){
-    //fetch(RUTA_CONTROLADOR).then(JSON).then(DATA).catch(ERRORES)
-    fetch(`../../controller/CategoriaController.php?task=getAll`,{
-      method:'GET'
-    })
-    .then(response =>{return response.json()})
-    .then(data =>{
-      tabla.innerHTML=``;
-      data.forEach(element => {
-        tabla.innerHTML+=`
-        <tr>
-          <td>${element.idCategoria}</td>
-          <td>${element.categoria}</td>
-          <td>
-          
-            <a href='editarCategoria.php?id=${element.idCategoria}' title='Editar' class='btn btn-info btn-sm edit'><i class="fa-solid fa-pencil"></i></a>
-            <a href='#' title='Eliminar' data-idcategoria='${element.idCategoria}' class='btn btn-danger btn-sm delete'><i class="fa-solid fa-trash"></i></a>
-            
-          </td>
+  const tabla = document.querySelector("#tabla-Categorias tbody");
 
-        </tr>
-        `;
-      });
-    })
-    .catch(error =>{console.error(error)});
+  // Obtener datos al cargar
+  function obtenerDatos() {
+    fetch(`../../controller/CategoriaController.php?task=getAll`)
+      .then(response => response.json())
+      .then(data => {
+        tabla.innerHTML = ``;
+        data.forEach(element => {
+          tabla.innerHTML += `
+            <tr>
+              <td>${element.idCategoria}</td>
+              <td>${element.categoria}</td>
+              <td>
+                <a href='editarCategoria.php?id=${element.idCategoria}' class='btn btn-info btn-sm edit' title='Editar'><i class="fa-solid fa-pencil"></i></a>
+                <a href='#' data-idcategoria='${element.idCategoria}' class='btn btn-danger btn-sm delete' title='Eliminar'><i class="fa-solid fa-trash"></i></a>
+              </td>
+            </tr>`;
+        });
+      })
+      .catch(error => console.error(error));
   }
-  document.addEventListener("DOMContentLoaded",()=>{
+
+  // Eliminar con confirmación de SweetAlert
+  tabla.addEventListener("click", event => {
+    const enlace = event.target.closest('a');
+    if (enlace && enlace.classList.contains('delete')) {
+      event.preventDefault();
+      const idcategoria = enlace.getAttribute('data-idcategoria');
+
+      Swal.fire({
+        title: '¿Está seguro?',
+        text: "¡No podrá revertir esta acción!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#d33',
+        cancelButtonColor: '#3085d6',
+        confirmButtonText: 'Sí, eliminar',
+        cancelButtonText: 'Cancelar'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          fetch(`../../controller/CategoriaController.php/${idcategoria}`, {
+            method: 'DELETE'
+          })
+          .then(response => response.json())
+          .then(datos => {
+            if (datos.filas > 0) {
+              const filaEliminar = enlace.closest('tr');
+              if (filaEliminar) filaEliminar.remove();
+              Swal.fire('¡Eliminado!', 'La categoría ha sido eliminada.', 'success');
+            } else {
+              Swal.fire('Error', 'No se pudo eliminar la categoría.', 'error');
+            }
+          })
+          .catch(error => {
+            console.error(error);
+            Swal.fire('Error', 'Hubo un problema al eliminar.', 'error');
+          });
+        }
+      });
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
     obtenerDatos();
 
-    tabla.addEventListener("click",(event)=>{
+    // Mensaje tras redirección de registro o edición
+    const params = new URLSearchParams(window.location.search);
+    const msg = params.get('msg');
 
-      const enlace=event.target.closest('a');
-      if(enlace && enlace.classList.contains('delete')){
-        event.preventDefault();
-        const idcategoria=enlace.getAttribute('data-idcategoria');
-          if(confirm("¿Está seguro de eliminar el registro?")){
-            fetch(`../../controller/CategoriaController.php/${idcategoria}`,{method:'DELETE'})
-            .then(response =>{return response.json()})
-            .then(datos=>{
-              if(datos.filas>0){
-                const filaEliminar=enlace.closest('tr');
-                if (filaEliminar){filaEliminar.remove();}
-              }
-            })
-            .catch(error=>{console.error(error)});
-          }
-      }
-    });
+    if (msg === 'insert') {
+      Swal.fire('¡Registrado!', 'Categoría registrada correctamente.', 'success');
+    }
+    if (msg === 'update') {
+      Swal.fire('¡Actualizado!', 'Categoría actualizada correctamente.', 'success');
+    }
   });
 </script>
+
 </body>
 </html>
-

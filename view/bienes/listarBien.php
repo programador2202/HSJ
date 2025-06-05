@@ -1,7 +1,6 @@
 <?php
-include '../index.php'
+include '../menu/index.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 
@@ -23,7 +22,7 @@ include '../index.php'
     <hr>
 
     <div class="card mt-3">
-      <div class="card-header bg-info"><strong>BIENES REGISTRADOS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>BIENES REGISTRADOS</strong></div>
       <div class="card-body">
         <table class="table table-bordered table-striped w-100" id="tabla-bienes">
           <colgroup>
