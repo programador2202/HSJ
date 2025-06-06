@@ -86,7 +86,7 @@ include '../menu/index.php'
 
             <td>
             
-              <a href='editar.php?id=${element.idBien}' title='Editar' class='btn btn-info btn-sm edit'><i class="fa-solid fa-pencil"></i></a>
+              <a href='editarBien.php?id=${element.idBien}' title='Editar' class='btn btn-info btn-sm edit'><i class="fa-solid fa-pencil"></i></a>
               <a href='#' title='Eliminar' data-idbien='${element.idBien}' class='btn btn-danger btn-sm delete'><i class="fa-solid fa-trash"></i></a>
               
             </td>

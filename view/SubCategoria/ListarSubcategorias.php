@@ -16,13 +16,13 @@ include '../menu/index.php'
 <body>
 
 <!--FIN DE NAVBAR-->
-<div class="container my-5">
+<div class="container mt-5">
 
     <h2 class="text-center mt-3">GESTIÓN DE SUBCATEGORIAS</h2>
     <button id="pgaddsubcategoria" type="button" onclick="window.location.href='././registrarSubCategoria.php'" class="btn btn-success"> <i class="fa-solid fa-plus"></i> NUEVA SUBCATEGORIA</button>
     <hr>
     <div class="card mt-3">
-      <div class="card-header bg-info"><strong>SUBCATEGORIAS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>SUBCATEGORIAS</strong></div>
       <div class="card-body">
         <table class="table table-bordered table-striped w-100" id="tabla-Subcategorias">
           <thead>

@@ -14,12 +14,12 @@ include '../menu/index.php'
 </head>
 
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <form action="" autocomplete="off" id="formulario-registrar">
             <h2 class="text-center mt-3">ACTUALIZAR DATOS</h2>
             <hr>
             <div class="card mt-3">
-                <div class="card-header bg-info"><strong>ACTUALIZAR ROL</strong></div>
+                <div class="card-header bg-primary text-white"><strong>ACTUALIZAR ROL</strong></div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12 mb-2">

@@ -15,8 +15,7 @@ include '../menu/index.php'
 <body>
 <div class="container mt-5">
         <form action="" method="">
-        <h2 class=" text-center mt-5">GESTIÓN DE USUARIOS</h2>
-        <br>
+        <h2 class=" text-center mt-3">GESTIÓN DE USUARIOS</h2>
         <button id="pgaddUsuarios" type="button" onclick="window.location.href='././agregarUsuario.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVO USUARIO</button>
         <hr>
         <div class="card mt-3">

@@ -16,14 +16,14 @@ include '../menu/index.php'
 </head>
 <body>
 
-<div class="container my-5">
+<div class="container mt-5">
   <h2 class="text-center mt-3">GESTIÓN DE ROLES</h2>
   <button id="pgaddRol" type="button" onclick="window.location.href='././registrarRol.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVO ROL</button>
     <hr>
 
     <div class="container">
   <div class="card mt-3">
-    <div class="card-header bg-info"><strong>ROLES REGISTRADOS</strong></div>
+    <div class="card-header bg-primary text-white"><strong>ROLES REGISTRADOS</strong></div>
     <div class="card-body">
       <table class="table table-bordered table-striped w-100" id="tabla-Roles">
         <colgroup>

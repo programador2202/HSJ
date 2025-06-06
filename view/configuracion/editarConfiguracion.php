@@ -13,12 +13,12 @@ include '../menu/index.php'
     <title>Document</title>
 </head>
 <body>
-<div class="container my-5">
+<div class="container mt-5">
         <form action="" method="post" id="formulario-registrar">
         <h2 class="text-center mb-4">ACTUALIZACIÓN DE DATOS</h2>
         <hr>
     <div class="card">
-      <div class="card-header bg-info"><strong>ACTUALIZAR</strong></div>
+      <div class="card-header bg-primary text-white"><strong>ACTUALIZAR</strong></div>
       <div class="card-body">
         <div class="row">
         <div class="col-md-12 mb-3">

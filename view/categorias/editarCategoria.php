@@ -11,7 +11,7 @@ include '../menu/index.php'
     <title>Document</title>
 </head>
 <body>
-<div class="container">
+<div class="container mt-5">
     <form action="" autocomplete="off" id="formulario-registrar">
       <h2 class="text-center mt-3">ACTUALIZAR DATOS</h2>
       <hr>

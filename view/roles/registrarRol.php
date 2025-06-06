@@ -16,13 +16,13 @@ include '../menu/index.php'
 
 <body>
   
-  <div class="container">
+  <div class="container mt-5">
     <form action="" autocomplete="off" id="formulario-registrar">
       <h2 class="text-center mt-3">REGISTRAR ROL</h2>
       <button id="listadoRoles" type="button" onclick="window.location.href='././ListarRoles.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER </button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR ROLES</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR ROLES</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-2">

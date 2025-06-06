@@ -17,12 +17,12 @@ include '../menu/index.php'
 
 <body>
   <form action="" method="POST" id="formulario-registrarMarca">
-    <div class="container">
+    <div class="container mt-5">
       <h2 class="text-center mt-3">REGISTRAR MARCA</h2>
       <button id="volvermarca" type="button" onclick="window.location.href='././ListarMarcas.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">

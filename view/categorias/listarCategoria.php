@@ -20,7 +20,7 @@ include '../menu/index.php'
     <hr>
 
   <div class="card mt-3">
-    <div class="card-header bg-info"><strong>CATEGORIAS REGISTRADAS</strong></div>
+    <div class="card-header bg-primary text-white"><strong>CATEGORIAS REGISTRADAS</strong></div>
     <div class="card-body">
       <table class="table table-bordered table-striped w-100" id="tabla-Categorias">
         <colgroup>

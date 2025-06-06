@@ -11,12 +11,12 @@ include '../menu/index.php'
     <title>Gestión de Marcas</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-5">
         <form action="" method="POST" id="formulario-registrarMarca">
             <h2 class="text-center mt-3">ACTUALIZACIÓN DE DATOS</h2>
             <hr>    
             <div class="card mt-3">
-                <div class="card-header bg-info"><strong>ACTUALIZAR MARCA</strong></div>
+                <div class="card-header bg-primary text-white"><strong>ACTUALIZAR MARCA</strong></div>
                 <input type="hidden" id="idmarca" name="idmarca">
                 <div class="card-body">
                     <div class="row"> 

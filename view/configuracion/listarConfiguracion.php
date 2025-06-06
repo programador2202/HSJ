@@ -16,13 +16,13 @@ include '../menu/index.php'
 <body>
  
 <!--FIN DE NAVBAR-->
-  <div class="container my-5">
+  <div class="container mt-5">
     <h2 class="text-center mt-5">GESTIÓN DE CONFIGURACIONES</h2>
     <button id="pgaddconfig" type="button" onclick="window.location.href='././agregarConfiguracion.php'"
       class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVA CONFIGURACIÓN</button>
     <hr>
     <div class="card mt-3">
-      <div class="card-header bg-info"><strong>CONFIGURACIONES REGISTRADAS</strong></div>
+      <div class="card-header bg-primary text-white"><strong>CONFIGURACIONES REGISTRADAS</strong></div>
       <div class="card-body">
         <table class="table table-bordered table-striped w-100" id="tabla-Configuracion">
           <thead>

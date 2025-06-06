@@ -19,7 +19,7 @@ include '../menu/index.php'
         <button id="pgaddmarca" type="button" onclick="window.location.href='././RegistrarMarcas.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVA MARCA</button>
         <hr>
         <div class="card mt-3">
-            <div class="card-header bg-info"><strong>MARCAS REGISTRADAS</strong></div>
+            <div class="card-header bg-primary text-white"><strong>MARCAS REGISTRADAS</strong></div>
             <div class="card-body">
                 <table class="table table-bordered table-striped w-100" id="tabla-marcas">
                     <colgroup>

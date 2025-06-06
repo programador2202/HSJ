@@ -18,11 +18,11 @@ include '../menu/index.php'
 <!--FIN DE NAVBAR-->
   <div class="container mt-5">
     <form action="" method="">
-      <h2 class="text-center mt-5">GESTIÓN DE COLABORADORES</h2>
+      <h2 class="text-center mt-3">GESTIÓN DE COLABORADORES</h2>
       <button id="pgaddColaboradores" type="button" onclick="window.location.href='././registrarColaborador.php'" class="btn btn-success"><i class="fa-solid fa-plus"></i> NUEVO COLABORADOR</button>
       <hr>
       <div class="card mt-3">
-  <div class="card-header mt-3 bg-info"><strong>COLABORADORES REGISTRADOS</strong></div>
+  <div class="card-header mt-3 bg-primary text-white"><strong>COLABORADORES REGISTRADOS</strong></div>
   <div class="card-body">
       <table class="table table-bordered table-striped w-100 mt-3" id="tablaColaboradores">
         <thead>

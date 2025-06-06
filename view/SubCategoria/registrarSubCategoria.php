@@ -16,14 +16,14 @@ include '../menu/index.php'
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mt-5">
     <form action="" method="post" id="formulario-registro" autocomplete="off">
 
       <h2 class="text-center mt-3">REGISTRAR SUBCATEGORIA</h2>
       <button id="listadosubcategorias" type="button" onclick="window.location.href='././ListarSubCategorias.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER </button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR SUBCATEGORIA</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR SUBCATEGORIA</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">

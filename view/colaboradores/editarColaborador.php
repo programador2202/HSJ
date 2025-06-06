@@ -17,7 +17,7 @@ include '../menu/index.php'
       <h2 class="text-center mt-5">ACTUALIZACIÓN DE DATOS</h2>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>ACTUALIZAR </strong></div>
+        <div class="card-header bg-primary text-white"><strong>ACTUALIZAR </strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">

@@ -12,13 +12,13 @@ include '../menu/index.php'
     <title>Document</title>
 </head>
 <body>
-<div class="container">
+<div class="container mt-5">
     <form action="" method="post" id="formulario-registro" autocomplete="off">
       
       <h2 class="text-center mt-3">ACTUALIZACIÓN DE DATOS</h2>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>ACTUALIZAR SUBCATEGORIA</strong></div>
+        <div class="card-header bg-primary text-white"><strong>ACTUALIZAR SUBCATEGORIA</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">

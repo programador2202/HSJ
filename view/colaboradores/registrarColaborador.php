@@ -22,7 +22,7 @@ include '../menu/index.php'
       <button id="volverColaborador" type="button" onclick="window.location.href='././listarColaboradores.php'" class="btn btn-success"><i class="fa-solid fa-arrow-left"></i> VOLVER</button>
       <hr>
       <div class="card mt-3">
-        <div class="card-header bg-info"><strong>REGISTRAR</strong></div>
+        <div class="card-header bg-primary text-white"><strong>REGISTRAR</strong></div>
         <div class="card-body">
           <div class="row">
             <div class="col-md-12 mb-3">
